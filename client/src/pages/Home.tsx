@@ -7,12 +7,10 @@ interface HomeProps extends RouteComponentProps {
 }
 
 export default function Home(props: HomeProps) {
-    const engineer = new Engineer('Thomas', 'Laforge', new Date('March 4, 1992 11:30:00'))
 
     return (
         <div className='page home'>
-            {engineer.getFullName()} a {engineer.getAge()} ans.
-            <Link to="dashboard">Voir le reste de l'équipe</Link>
+            <Link to="team">Mon équipe</Link>
         </div>
     )
 }
