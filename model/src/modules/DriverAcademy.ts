@@ -17,7 +17,7 @@ export class DriverAcademy {
         })
     }
 
-    setDrivers(drivers: Driver[]){
+    startNewYear(drivers: Driver[]){
         this.used++
         this.drivers = drivers
     }
