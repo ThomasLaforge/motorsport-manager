@@ -4,7 +4,7 @@ import { DEFAULT_START_MONEY } from "./definitions"
 
 export class BankAccount {
     @persist @observable public money = DEFAULT_START_MONEY
-    
+
     constructor(){
         makeObservable(this)
     }

@@ -11,6 +11,6 @@ export class Team {
         public mecanics: Mecanic[] = [],
         public achievements: Achievement[] = [],
     ){
-        makeObservable(this)
+        // makeObservable(this)
     }
 }

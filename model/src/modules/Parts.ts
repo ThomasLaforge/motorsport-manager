@@ -6,7 +6,7 @@ export class Part {
         public value = Math.floor(Math.random() * (MAX_INITIAL_PART_VALUE - MIN_INITIAL_PART_VALUE) + MIN_INITIAL_PART_VALUE),
         public reliability = Math.floor(Math.random() * (MAX_INITIAL_PART_RELIABILITY - MIN_INITIAL_PART_RELIABILITY) + MIN_INITIAL_PART_RELIABILITY)
     ){
-        makeObservable(this)
+        // makeObservable(this)
     }
 
     is(classToTest: Class){

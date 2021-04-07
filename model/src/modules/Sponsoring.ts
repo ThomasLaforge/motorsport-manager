@@ -21,7 +21,7 @@ export class Sponsoring {
     constructor(
         public contracts: SponsorContract[] = []
     ){
-        makeObservable(this)
+        // makeObservable(this)
     }
 
     static getRandomContract(game: Game) : SponsorContract {

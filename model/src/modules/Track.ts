@@ -7,9 +7,8 @@ export class Track {
     constructor(
         public referenceTime: number,
         public nbTurns: number,
-
     ){
-        makeObservable(this)
+        // makeObservable(this)
     }
 
     getLapTime(car: Car, driver: Driver, currentSetup: Setup){

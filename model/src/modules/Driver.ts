@@ -15,7 +15,7 @@ export class Driver extends People {
         public raceEngineer?: Engineer
     ){
         super(firstName, surname, birthDate)
-        makeObservable(this)
+        // makeObservable(this)
     }
 
     academyProgress(){

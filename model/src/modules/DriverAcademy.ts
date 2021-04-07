@@ -7,7 +7,7 @@ export class DriverAcademy {
         public used = 0,
         public drivers: Driver[] = []
     ){
-        makeObservable(this)
+        // makeObservable(this)
     }
 
     getYearFees(){

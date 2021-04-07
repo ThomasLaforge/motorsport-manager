@@ -9,7 +9,7 @@ export class Mecanic extends People {
         birthDate: Date,
     ){
         super(firstName, surname, birthDate)
-        makeObservable(this)
+        // makeObservable(this)
     }
 
     improvePart(p: Part){

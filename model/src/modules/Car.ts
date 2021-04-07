@@ -16,7 +16,7 @@ export class Car {
         public suspensions = new Suspensions(),
         public gearBox = new GearBox()
     ){
-        makeObservable(this)
+        // makeObservable(this)
     }
 
     improveTyreConsumption(newConsumption: number){
