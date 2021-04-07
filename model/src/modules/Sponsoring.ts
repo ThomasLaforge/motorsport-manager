@@ -1,3 +1,4 @@
+import { makeObservable } from "mobx";
 import { Game } from "./Game";
 
 export interface Sponsor {
@@ -19,7 +20,9 @@ export class Sponsoring {
 
     constructor(
         public contracts: SponsorContract[] = []
-    ){}
+    ){
+        makeObservable(this)
+    }
 
     static getRandomContract(game: Game) : SponsorContract {
         return {
