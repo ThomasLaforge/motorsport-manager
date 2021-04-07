@@ -1,1 +1,0 @@
-// declare module 'motorsport-manager_model'
