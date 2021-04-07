@@ -1,6 +1,10 @@
+import { create } from "mobx-persist";
 import { createContext } from "react";
-import { GameStore } from "./GameStore";
+import { Game as GameStore } from "motorsport-manager_model";
 
-export const rootStoreContext = createContext({
-  gameStore: new GameStore()
-});
+const gameStore = new GameStore()
+
+const hydrate = create()
+hydrate('gameStore', gameStore).then(() => console.log('gameStore has been hydrated'))
+
+export const rootStoreContext = createContext({ gameStore });

@@ -14,8 +14,6 @@ const App = observer(() => {
         <Home path="/" />
         <Team path="team" />
       </Router>
-      {gameStore.title}
-      <button onClick={() => gameStore.updateToto()}>Update toto</button>
     </div>
   );
 })

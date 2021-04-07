@@ -1,3 +1,4 @@
+import { makeObservable } from "mobx";
 import { countryList, DriverStatistics } from "./definitions";
 import { Engineer } from "./Engineer";
 import { People } from "./People";
@@ -14,6 +15,7 @@ export class Driver extends People {
         public raceEngineer?: Engineer
     ){
         super(firstName, surname, birthDate)
+        makeObservable(this)
     }
 
     academyProgress(){

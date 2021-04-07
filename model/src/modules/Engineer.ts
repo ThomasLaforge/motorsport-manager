@@ -1,3 +1,4 @@
+import { makeObservable } from "mobx";
 import { People } from "./People";
 
 export class Engineer extends People {
@@ -8,5 +9,6 @@ export class Engineer extends People {
         birthDate: Date,
     ){
         super(firstName, surname, birthDate)
+        makeObservable(this)
     }
 }

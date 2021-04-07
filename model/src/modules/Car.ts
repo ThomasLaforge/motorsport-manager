@@ -1,3 +1,4 @@
+import { makeObservable } from "mobx";
 import { Conception } from "./definitions";
 import { Brakes, FrontWing, GearBox, Motor, Part, RearWing, Suspensions } from "./Parts";
 
@@ -14,7 +15,9 @@ export class Car {
         public motor = new Motor(),
         public suspensions = new Suspensions(),
         public gearBox = new GearBox()
-    ){}
+    ){
+        makeObservable(this)
+    }
 
     improveTyreConsumption(newConsumption: number){
         this.conception = {
