@@ -1,0 +1,114 @@
+.home {
+    .home-app_bar {
+        height: 10vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+        $app-bar_btn-width: 12rem;
+
+        .app-bar-infos {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+
+            .app-bar-btn {
+                background-color: #728DA0;
+            }
+            .app-bar-btn:hover {
+                background-color: #69CFC4;
+            }
+
+            .btn-success { width: $app-bar_btn-width; }                
+            .btn-credit { width: $app-bar_btn-width; }            
+        }
+        .socials {
+            display: flex;
+            flex-direction: row;
+            
+            .social-btn {
+                background-color: #728DA0;
+            }
+            .social-btn:hover {
+                background-color: #69CFC4;
+            }
+            
+            .gmail-btn {
+                width: $app-bar_btn-width;
+            }
+        }
+    }
+    .content {
+        .content-box {
+            background: linear-gradient(#677485 0%, #728DA0 50%, #7EA3B8 100%);
+            color: #E7EBF3;
+            border-radius: 1rem;
+        }
+        .play-zone {
+            display: flex;
+            flex-direction: row;
+            border-radius: 1rem;
+            height: 50vh;
+            margin: 3vh 0;
+            
+            .left-part {
+                width: 50%;
+                background-color: #171B27;
+                border-radius: 1rem 0 0 1rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                padding-top: 6vh;
+                
+                .game-title {
+                    .game-title-motorsport {
+                        color: #56958F;
+                        font-size: 3rem;
+                    }
+                    .game-title-manager {
+                        font-weight: bold;
+                        font-size: 4rem;
+                    }
+                }
+                .separator {
+                    border: 1px solid #E7EBF3;
+                    width: 70%;
+                }
+                .subtitle {
+                    font-size: 1.2rem;
+                }
+                .btn-play {
+                    font-size: 2rem;
+                    width: 80%;
+                }
+            }
+            .right-part {
+                width: 50%;
+            }
+        }
+        
+        .extras {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+            height: 25vh;
+            
+            .btn-extras {
+                width: 80%;
+                font-size: 1.5rem;
+            }
+            .extras-title {
+                font-size: 2rem;
+            }
+            .extras-sub-title {}
+            
+            .race, .settings {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                width: 48%;
+            }
+        }
+    }
+}

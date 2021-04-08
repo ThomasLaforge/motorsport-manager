@@ -9,9 +9,10 @@ export default observer(() => {
 
     return (
         <div className="info-bar">
-            {gameStore.bankAccount.money}
-            <div>toto : {gameStore.engineer.firstName}</div>
-            <button onClick={() => gameStore.engineer.updateFirstName()}>update firstname</button>
+            <div className="info-bar-money">
+                <div className="money-logo"/>
+                <div className='money-value'>{gameStore.bankAccount.money}</div>
+            </div>
         </div>
     )
 })
