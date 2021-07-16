@@ -1,5 +1,5 @@
 import React from 'react'
-import { RouteComponentProps } from '@reach/router'
+import { RouteComponentProps, useNavigate } from '@reach/router'
 import { observer } from 'mobx-react'
 
 import './style.scss'
@@ -8,6 +8,7 @@ import Button from '../../components/Button/Button'
 interface HomeProps extends RouteComponentProps {}
 
 export default observer((props: HomeProps) => {
+    const navigate = useNavigate();
     return (
         <div className='page home'>
             <div className="home-app_bar">
@@ -31,7 +32,9 @@ export default observer((props: HomeProps) => {
                         </div>
                         <hr className="separator" />
                         <div className="subtitle">Un monde de sport automobile</div>
-                        <Button className='btn-play'>JOUER</Button>
+                        <Button className='btn-play'
+                            onClick={() => navigate('testday')}
+                        >JOUER</Button>
                     </div>
                     <div className="right-part" />
                 </div>

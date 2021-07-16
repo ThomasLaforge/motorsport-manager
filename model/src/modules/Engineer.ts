@@ -7,6 +7,7 @@ export class Engineer extends People {
         firstName: string,
         surname: string,
         birthDate: Date,
+        public testDayCapacities: number
     ){
         super(firstName, surname, birthDate)
         makeObservable(this)

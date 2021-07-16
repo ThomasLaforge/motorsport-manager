@@ -8,6 +8,7 @@ export {Mecanic} from './Mecanic'
 export {People} from './People'
 export {Sponsoring} from './Sponsoring'
 export {Team} from './Team'
+export {TestDay} from './TestDay'
 export {Track} from './Track'
 export {
     Brakes, 

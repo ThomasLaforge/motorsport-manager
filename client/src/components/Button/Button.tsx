@@ -8,7 +8,7 @@ interface ButtonProps {
     onClick?: Function
 }
 
-export default (props: ButtonProps) => {
+const Button = (props: ButtonProps) => {
     return (
         <div className={"btn " + props.className}
             onClick={() => props.onClick && props.onClick()}
@@ -17,3 +17,5 @@ export default (props: ButtonProps) => {
         </div>
     )
 }
+
+export default Button

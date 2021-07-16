@@ -1,0 +1,57 @@
+.track-day {
+
+    .track-day-score-bar {
+        height: 200px;
+        width: 40px;
+        border: 4px solid;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        position: relative;
+
+        .track-day-score {
+            background-color: lawngreen;
+        }
+
+        .score-limit {
+            border-top: 2px solid orange;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+        .score-limit-25 { height: 25%; }
+        .score-limit-50 { height: 50%; }
+        .score-limit-75 { height: 75%; }
+    }
+
+    .run-state {}
+    .engineer-capacities-used {}
+    .missions {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: auto;
+
+        .mission {
+            border: 10px solid;
+            border-radius: 13px;
+            width: 100px;
+            height: 100px;
+            margin-inline: 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            font-size: 1.4em;
+        
+            .probabilities {
+        
+            }
+            .mission-value {
+        
+            }
+        }
+    }
+
+    .btn-next-turn {}
+}

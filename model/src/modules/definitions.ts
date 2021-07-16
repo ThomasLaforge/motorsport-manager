@@ -6,7 +6,8 @@ export const MAX_INITIAL_PART_VALUE = 70
 export const DEFAULT_START_MONEY= 7 // in million
 export const DRIVER_ACADEMY_COST_EACH_YEAR = 2 // in million
 export const DRIVE_ACADEMY_COST_FOREACH_YEARS_USED = 1 // in million
-
+export const DEFAULT_TEST_DAY_MISSIONS_NUMBER = 3
+export const NB_RUN_IN_TEST_DAY = 3
 export interface DriverStatistics {
     Start: number,
     Speed: number,

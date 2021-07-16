@@ -11,7 +11,7 @@ export class Game {
 
     @observable
     @persist('object', Engineer)
-    public engineer = new Engineer('toto', 'tata', new Date())
+    public engineer = new Engineer('toto', 'tata', new Date(), 15)
     
     @persist('object', BankAccount) 
     @observable 

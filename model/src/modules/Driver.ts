@@ -10,9 +10,9 @@ export class Driver extends People {
         birthDate: Date,
         public country = 'France',
         public statistics: DriverStatistics,
-        public maximumStatistics: DriverStatistics,
+        public potential?: DriverStatistics,
+        public raceEngineer?: Engineer,
         public talentPointsToUse = 0,
-        public raceEngineer?: Engineer
     ){
         super(firstName, surname, birthDate)
         // makeObservable(this)
@@ -25,8 +25,21 @@ export class Driver extends People {
 
 export class FabricDriver {
 
-    create(id: number){
-        const randomStatistics: DriverStatistics = {
+    static create(id: number){
+        const randomStatistics = FabricDriver.generateRandomDriverStatistics()
+
+        return new Driver(
+            'driver_' + id,
+            '',
+            new Date(),
+            countryList[Math.floor(Math.random() * (countryList.length - 1))],
+            randomStatistics,
+            randomStatistics,
+        )
+    }
+
+    static generateRandomDriverStatistics() : DriverStatistics {
+        return {
             salaryWished: Math.random() * 1000,
             Concentration: 10,
             FuelEconomy: 10,
@@ -39,14 +52,5 @@ export class FabricDriver {
             contractPrimeWished: 10,
             longTermeContractWished: false
         }
-
-        return new Driver(
-            'driver_' + id,
-            '',
-            new Date(),
-            countryList[Math.floor(Math.random() * (countryList.length - 1))],
-            randomStatistics,
-            randomStatistics,
-        )
     }
 }
